@@ -10,7 +10,7 @@ const handledec=(item)=>{
         it.id===item.id? {...it,count:it.count===0?0:it.count-1}:it
 );
 setcart(newarray)
-setcount(count-1);
+setcount(count===0?0:count-1);
 }
 const handleinc=(item)=>{
    

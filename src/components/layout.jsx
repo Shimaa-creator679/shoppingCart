@@ -5,20 +5,26 @@ import Carttab from './Carttab'
 
 const Layout = ({count,setcount}) => {
   return (
-    <div className='bg-zinc-200  bg-gray-100 '>
+    <div className=' bg-gray-100   '>
 
 
      
-      <main className='   p-5 '>
-        <div className="container">
+
+
+     
+      <main className='p-5 sm:mx-20 relative  '>
+     
+
+        
+   
 
         
      <Header count={count}/>
 
 <Outlet/>
-</div>
-</main>
 <Carttab count={count} setcount={setcount}/>
+</main>
+
 
     </div>
   )
