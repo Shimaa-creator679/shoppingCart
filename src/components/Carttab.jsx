@@ -10,7 +10,7 @@ const Carttab = ({count,setcount}) => {
   return (
     <>
       {active && (
-        <div className="bg-gray-900 px-1" data-aos="fade-up">
+        <div className="bg-gray-900 px-1 absolute bottom-0" data-aos="fade-up">
           <h1 className="my-5 text-white font-semibold uppercase">shopping cart</h1>
           <div>
             {cart.map((item) => (
